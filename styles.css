@@ -285,3 +285,37 @@ body {
   .grid-2 { grid-template-columns: 1fr; }
   .gallery-grid { gap: 10px; }
 }
+/* 1. Navbar Button Logic (Desktop Only) */
+.hidden-mobile {
+  display: none; /* Hidden by default on mobile */
+}
+
+@media (min-width: 1024px) {
+  .hidden-mobile {
+    display: inline-flex; /* Show only on Windows/Desktop */
+  }
+}
+
+/* 2. Footer Logo Sizing */
+.footer-logo-container {
+  width: 50px;  /* Size of the logo box */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures logo fits without stretching */
+}
+
+/* Mobile Adjustment for Footer Logo */
+@media (max-width: 768px) {
+  .footer-logo-container {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+}
