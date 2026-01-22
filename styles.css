@@ -232,7 +232,7 @@ body {
 @media (max-width: 768px) {
   /* Fix Navbar spacing and Logo Size */
   .navbar-inner { height: 70px; }
-  .brand-logo { width: 190px; height: 190px; } /* Slightly bigger for visibility */
+  .brand-logo { width: 140px; height: 140px; } /* Slightly bigger for visibility */
   .brand-text { font-size: 1rem; }
   
   /* FIX HERO: Remove black space by aligning top */
@@ -276,7 +276,7 @@ body {
   }
   /* --- NEW: Adjust Speaker Image Height for Mobile --- */
   .speaker-img {
-    height: 350px; /* Reduced from 350px to 250px for mobile */
+    height: 250px; /* Reduced from 350px to 250px for mobile */
     object-position: top center; /* Keeps faces visible if cropped */
   }
   
