@@ -4,7 +4,7 @@
   --bg-card: rgba(255, 255, 255, 0.03);
   --bg-glass: rgba(255, 255, 255, 0.05);
   
-  --primary: #6366f1; /* Indigo */
+  --primary: #6366f1;
   --primary-glow: rgba(99, 102, 241, 0.5);
   --accent-pink: #ec4899;
   --accent-cyan: #06b6d4;
@@ -65,7 +65,7 @@ body {
 /* Brand Styling */
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; max-width: 80%; }
 .brand-logo { 
-  width: 200px; height: 140px; 
+  width: 50px; height: 50px; 
   display: grid; place-items: center; color: white; flex-shrink: 0;
 }
 .brand-text { 
@@ -85,11 +85,11 @@ body {
 @media(min-width: 1024px) { 
   .nav-desktop { display: flex; } 
   .nav-mobile-toggle { display: none; }
-  #openRegisterTop { display: inline-flex; } /* Ensure visible on desktop */
+  #openRegisterTop { display: inline-flex; } 
 }
 
 /* Mobile: Hide Register Button in Header */
-#openRegisterTop { display: none; } /* Default hidden (mobile first logic) */
+#openRegisterTop { display: none; }
 
 /* Mobile Menu */
 .mobile-menu { position: fixed; top: 80px; inset-inline: 0; background: var(--bg-dark); padding: 20px; border-bottom: 1px solid var(--border); z-index: 99; }
@@ -194,6 +194,7 @@ body {
 .input-field:focus { border-color: var(--primary); }
 .area { min-height: 120px; resize: none; }
 
+/* Footer */
 .footer { border-top: 1px solid var(--border); padding: 40px 0 20px; background: #000; }
 .footer-content { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px; margin-bottom: 30px; }
 .footer-brand { display: flex; gap: 15px; align-items: center; }
@@ -229,32 +230,52 @@ body {
 
 /* --- MOBILE SPECIFIC OVERRIDES --- */
 @media (max-width: 768px) {
+  /* Fix Navbar spacing and Logo Size */
   .navbar-inner { height: 70px; }
-  
-  /* Logo Sizing */
-  .brand-logo { width: 120px; height: 1200px; }
+  .brand-logo { width: 40px; height: 40px; } /* Slightly bigger for visibility */
   .brand-text { font-size: 1rem; }
   
-  /* Hero Fix: Align Top instead of Center */
+  /* FIX HERO: Remove black space by aligning top */
   .hero-section {
-    align-items: flex-start; /* Move content to top */
-    padding-top: 130px;      /* Space for Navbar + Top Gap */
-    min-height: auto;        /* Stop forcing full screen height if not needed */
+    align-items: flex-start; /* Key fix */
+    padding-top: 130px;      /* Clear navbar */
+    min-height: auto;        /* Let it grow naturally */
     padding-bottom: 60px;
   }
   
-  /* Typography Adjustments */
+  /* Hero Typography */
   .hero-title { font-size: 2.8rem; margin-bottom: 15px; }
   .hero-subline { font-size: 1.4rem; margin-bottom: 15px; }
   
-  /* Layout Adjustments */
+  /* Layout Spacing */
   .section { padding: 60px 0; }
   .container { width: 90%; }
   
+  /* Fix Countdown */
   .cd-val { font-size: 1.2rem; }
   .cd-sep { font-size: 1.2rem; }
   .countdown { padding: 10px 15px; gap: 8px; width: 100%; overflow-x: auto; justify-content: space-between; }
   
+  /* Compact Footer */
+  .footer-content { 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 30px; /* Reduced gap */
+    justify-content: center;
+  }
+  .footer-brand { 
+    justify-content: center; 
+    margin-bottom: 10px;
+  }
+  .footer-links { 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  .footer-social { 
+    justify-content: center; 
+  }
+  
+  /* Stacking Grids */
   .grid-4 { grid-template-columns: 1fr; }
   .grid-2 { grid-template-columns: 1fr; }
   .gallery-grid { gap: 10px; }
