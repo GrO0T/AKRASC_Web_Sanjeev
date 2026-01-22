@@ -67,7 +67,7 @@ body {
 .navbar-inner { height: 80px; display: flex; align-items: center; justify-content: space-between; }
 
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; max-width: 80%; }
-.brand-logo { width: 130px; height: 130px; display: grid; place-items: center; color: white; flex-shrink: 0; }
+.brand-logo { width: 140px; height: 140px; display: grid; place-items: center; color: white; flex-shrink: 0; }
 .brand-text { font-family: var(--font-heading); font-weight: 700; font-size: 1.25rem; letter-spacing: -0.5px; white-space: nowrap; }
 .highlight { color: var(--accent-cyan); }
 .nav-logo-img { width: 100%; height: 100%; object-fit: contain; }
