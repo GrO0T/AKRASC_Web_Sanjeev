@@ -65,7 +65,7 @@ body {
 /* Brand Styling */
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; max-width: 80%; }
 .brand-logo { 
-  width: 100px; height: 70px; 
+  width: 150px; height: 90px; 
   display: grid; place-items: center; color: white; flex-shrink: 0;
 }
 .brand-text { 
