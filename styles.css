@@ -228,7 +228,7 @@ body {
 .delay-5 { transition-delay: 0.5s; }
 
 /* MOBILE OVERRIDES */
-@media (max-width: 768px) {
+@media (max-width: 168px) {
   .navbar-inner { height: 60px; }
   .brand-logo { width: 120px; height: 1200px; }
   .brand-text { font-size: 1rem; }
