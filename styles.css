@@ -227,18 +227,35 @@ body {
 .delay-4 { transition-delay: 0.4s; }
 .delay-5 { transition-delay: 0.5s; }
 
-/* MOBILE OVERRIDES */
+/* --- MOBILE SPECIFIC OVERRIDES --- */
 @media (max-width: 768px) {
-  .navbar-inner { height: 60px; }
+  .navbar-inner { height: 70px; }
+  
+  /* Logo Sizing */
   .brand-logo { width: 120px; height: 1200px; }
   .brand-text { font-size: 1rem; }
-  .section { padding: 50px 0; }
-  .container { width: 92%; }
-  .hero-title { font-size: 2.8rem; }
-  .hero-subline { font-size: 1.4rem; }
+  
+  /* Hero Fix: Align Top instead of Center */
+  .hero-section {
+    align-items: flex-start; /* Move content to top */
+    padding-top: 130px;      /* Space for Navbar + Top Gap */
+    min-height: auto;        /* Stop forcing full screen height if not needed */
+    padding-bottom: 60px;
+  }
+  
+  /* Typography Adjustments */
+  .hero-title { font-size: 2.8rem; margin-bottom: 15px; }
+  .hero-subline { font-size: 1.4rem; margin-bottom: 15px; }
+  
+  /* Layout Adjustments */
+  .section { padding: 60px 0; }
+  .container { width: 90%; }
+  
   .cd-val { font-size: 1.2rem; }
   .cd-sep { font-size: 1.2rem; }
-  .countdown { padding: 10px 15px; gap: 5px; }
+  .countdown { padding: 10px 15px; gap: 8px; width: 100%; overflow-x: auto; justify-content: space-between; }
+  
   .grid-4 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
   .gallery-grid { gap: 10px; }
 }
