@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AKRASC 2026 | Future of Robotics</title>
+    <meta name="description" content="Join AKRASC 2026 - Kerala's premier robotics and automation event." />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body>
+    <div class="ambient-glows">
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div id="toast" class="toast">
+        <div class="toast-icon"><i data-lucide="check-circle-2"></i></div>
+        <div class="toast-content">
+          <div class="toast-title" id="toastTitle"></div>
+          <div class="toast-desc" id="toastDesc"></div>
+        </div>
+    </div>
+
+    <header class="navbar" id="navbar">
+      <div class="container navbar-inner">
+        <a class="brand" href="#home" data-scroll="#home">
+          <div class="brand-logo">
+            <img src="./assets/logo.png" alt="AKRASC Logo" class="nav-logo-img">
+          </div>
+          <span class="brand-text">IEEE RAS<span class="highlight">.Kerala Chapter</span></span>
+        </a>
+
+        <nav class="nav-desktop">
+          <button class="nav-link is-active" data-scroll="#home">Home</button>
+          <button class="nav-link" data-scroll="#about">About</button>
+          <button class="nav-link" data-scroll="#details">Details</button>
+          <button class="nav-link" data-scroll="#gallery">Gallery</button>
+          <button class="nav-link" data-scroll="#speakers">Speakers</button>
+          <button class="nav-link" data-scroll="#contact">Contact</button>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-primary hidden-sm" id="openRegisterTop">
+            <span>Get Tickets</span>
+            <i data-lucide="arrow-right"></i>
+          </button>
+          <button class="menu-btn nav-mobile-toggle" id="mobileToggle">
+            <i data-lucide="menu"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu" hidden>
+        <div class="mobile-menu-inner">
+          <button class="mobile-link" data-scroll="#home">Home</button>
+          <button class="mobile-link" data-scroll="#about">About</button>
+          <button class="mobile-link" data-scroll="#details">Details</button>
+          <button class="mobile-link" data-scroll="#gallery">Gallery</button>
+          <button class="mobile-link" data-scroll="#speakers">Speakers</button>
+          <button class="mobile-link" data-scroll="#contact">Contact</button>
+          <button class="btn btn-primary w-full mt-4" id="openRegisterMobile">Register Now</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            
+            <div class="hero-date-wrapper reveal">
+               <div class="date-badge">
+                  <i data-lucide="calendar-clock"></i>
+                  <span>January 31, 2026</span>
+               </div>
+               <span class="status-dot"></span> 
+               <span class="muted">Chengannur, Kerala</span>
+            </div>
+
+            <h1 class="hero-title reveal delay-1">
+              <span class="text-gradient">AKRASC 2026</span>
+            </h1>
+
+            <h2 class="hero-subline reveal delay-2">
+              Constructing the <span class="white-highlight">Intelligent Future.</span>
+            </h2>
+
+            <p class="hero-desc reveal delay-3">
+              Join 500+ innovators, researchers, and industry leaders at Kerala's premier robotics conclave. 
+              Explore the boundaries of automation.
+            </p>
+
+            <div class="hero-actions reveal delay-4">
+              <button class="btn btn-primary btn-lg" id="openRegisterHero">
+                Reserve Your Spot
+              </button>
+              <button class="btn btn-glass btn-lg" data-scroll="#about">
+                <i data-lucide="play-circle"></i> Explore Event
+              </button>
+            </div>
+
+            <div class="countdown-wrapper reveal delay-5">
+              <div class="countdown" id="countdown">
+                <div class="cd-box"><div class="cd-val" id="cdDays">00</div><div class="cd-lbl">Days</div></div>
+                <div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-val" id="cdHours">00</div><div class="cd-lbl">Hours</div></div>
+                <div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-val" id="cdMinutes">00</div><div class="cd-lbl">Minutes</div></div>
+                <div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-val" id="cdSeconds">00</div><div class="cd-lbl">Seconds</div></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hero-visual reveal delay-3">
+             <div class="logo-display-wrapper">
+                <img 
+                  src="./assets/hero-cover.jpg" 
+                  alt="AKRASC Official Event Cover" 
+                  class="hero-logo-img"
+                >
+                <div class="logo-glow"></div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sponsor-strip">
+        <div class="container">
+            <p class="sponsor-label reveal">Powered by Industry Leaders</p>
+            <div class="sponsor-grid reveal delay-1">
+                <div class="sponsor-item">
+                    <div class="sponsor-logo"><i data-lucide="triangle" class="logo-icon"></i><span>NEXUS <span class="light">Dynamics</span></span></div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo"><i data-lucide="zap" class="logo-icon"></i><span>KERALA <span class="light">Robotics</span></span></div>
+                </div>
+                <div class="sponsor-item">
+                    <div class="sponsor-logo"><i data-lucide="globe-2" class="logo-icon"></i><span>FUTURE <span class="light">Systems</span></span></div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header center reveal">
+            <span class="pill">About The Event</span>
+            <h2 class="section-title">Where Innovation <span class="text-gradient">Meets Reality</span></h2>
+          </div>
+          <div class="grid-2 about-layout">
+            <div class="about-text reveal">
+               <p class="lead">The IEEE Robotics and Automation Society Kerala Chapter presents its most ambitious conclave yet.</p>
+               <p class="muted">A hybrid experience designed to connect students with industry titans. From Industrial IoT to Humanoid Robotics, AKRASC 2026 covers the spectrum of modern automation.</p>
+               <ul class="feature-list">
+                 <li><i data-lucide="check-circle"></i> <span>Networking with Robotic Engineers</span></li>
+                 <li><i data-lucide="check-circle"></i> <span>Hands-on ROS2 Workshops</span></li>
+                 <li><i data-lucide="check-circle"></i> <span>Startup Pitch Fest</span></li>
+               </ul>
+            </div>
+            <div class="about-visual reveal delay-2">
+               <div class="glass-card metric-card">
+                  <i data-lucide="users" class="metric-icon"></i>
+                  <div class="metric-val">500+</div>
+                  <div class="metric-lbl">Innovators</div>
+               </div>
+               <div class="glass-card metric-card secondary">
+                  <i data-lucide="globe" class="metric-icon"></i>
+                  <div class="metric-val">Global</div>
+                  <div class="metric-lbl">Hybrid Access</div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="section bg-glass">
+        <div class="container">
+           <div class="section-header center reveal">
+                <span class="pill">Event Highlights</span>
+                <h2 class="section-title">Why <span class="text-gradient">Attend?</span></h2>
+           </div>
+           <div class="grid-4">
+              <div class="feature-card reveal">
+                 <div class="icon-box purple"><i data-lucide="trophy"></i></div>
+                 <h3>ProjecX Expo</h3>
+                 <p>Showcase your project and compete for a ₹50k Prize Pool.</p>
+              </div>
+              <div class="feature-card reveal delay-1">
+                 <div class="icon-box blue"><i data-lucide="map-pin"></i></div>
+                 <h3>PRC,Chengannur</h3>
+                 <p>Hosted at Providence College Of Engineering, Chengannur, Alappuzha & Online.</p>
+              </div>
+              <div class="feature-card reveal delay-2">
+                 <div class="icon-box pink"><i data-lucide="zap"></i></div>
+                 <h3>Hybrid Mode</h3>
+                 <p>Join us in-person or stream sessions live.</p>
+              </div>
+              <div class="feature-card reveal delay-3">
+                 <div class="icon-box orange"><i data-lucide="award"></i></div>
+                 <h3>Certifications</h3>
+                 <p>Verified IEEE RAS certificates for all attendees.</p>
+              </div>
+           </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="container">
+            <div class="section-header center reveal">
+                <span class="pill">Gallery</span>
+                <h2 class="section-title">Experience the <span class="text-gradient">Atmosphere</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large reveal">
+                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200&auto=format&fit=crop" alt="Robotics Lab">
+                    <div class="gallery-overlay"><span>Innovation Lab</span></div>
+                </div>
+                <div class="gallery-item tall reveal delay-1">
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop" alt="Workshop">
+                    <div class="gallery-overlay"><span>Workshops</span></div>
+                </div>
+                <div class="gallery-item reveal delay-2">
+                    <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=800&auto=format&fit=crop" alt="Conference">
+                    <div class="gallery-overlay"><span>Networking</span></div>
+                </div>
+                <div class="gallery-item reveal delay-3">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop" alt="Speakers">
+                    <div class="gallery-overlay"><span>Keynotes</span></div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="speakers" class="section">
+        <div class="container">
+          <div class="section-header center reveal">
+            <span class="pill">Visionaries</span>
+            <h2 class="section-title">Meet the <span class="text-gradient">Speakers</span></h2>
+          </div>
+
+          <div class="grid-4 speaker-grid">
+            <div class="speaker-card reveal">
+               <img src="./assets/speakers/speaker1.jpg" class="speaker-img" alt="Dr. Arun Kumar">
+               <div class="speaker-info">
+                  <h4>Dr. Arthur Sterling</h4>
+                  <span class="role">Principal Engineer, Swarm Robotics Division</span>
+               </div>
+               <div class="speaker-socials">
+                  <a href="#"><i data-lucide="linkedin"></i></a>
+                  <a href="#"><i data-lucide="twitter"></i></a>
+               </div>
+            </div>
+
+            <div class="speaker-card reveal delay-1">
+               <img src="./assets/speakers/speaker2.jpg" class="speaker-img" alt="Prof. Lakshmi">
+               <div class="speaker-info">
+                  <h4>Prof. Sarah Hill</h4>
+                  <span class="role">Director AI @ HIVE</span>
+               </div>
+               <div class="speaker-socials">
+                  <a href="#"><i data-lucide="linkedin"></i></a>
+                  <a href="#"><i data-lucide="twitter"></i></a>
+               </div>
+            </div>
+
+            <div class="speaker-card reveal delay-2">
+               <img src="./assets/speakers/speaker3.jpg" class="speaker-img" alt="Ms. Sneha Rajesh">
+               <div class="speaker-info">
+                  <h4>Mr. Mark Lewis</h4>
+                  <span class="role">VP Engineering @ Cloud Link</span>
+               </div>
+               <div class="speaker-socials">
+                  <a href="#"><i data-lucide="linkedin"></i></a>
+                  <a href="#"><i data-lucide="twitter"></i></a>
+               </div>
+            </div>
+
+            <div class="speaker-card reveal delay-3">
+               <img src="./assets/speakers/speaker4.jpg" class="speaker-img" alt="Dr. Vinod Krishnan">
+               <div class="speaker-info">
+                  <h4>Dr. Jane Scott</h4>
+                  <span class="role">Founder @ NEXUS Dynamics</span>
+               </div>
+               <div class="speaker-socials">
+                  <a href="#"><i data-lucide="linkedin"></i></a>
+                  <a href="#"><i data-lucide="twitter"></i></a>
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section">
+        <div class="container small-container">
+          <div class="section-header center reveal"><span class="pill">FAQ</span><h2 class="section-title">Common <span class="text-gradient">Questions</span></h2></div>
+          <div class="faq-list reveal">
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">Who can attend AKRASC 2026? <span class="icon-plus"></span></button>
+              <div class="faq-content" hidden><p>AKRASC is open to everyone—students, researchers, faculty, and industry professionals.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">Is there a registration fee? <span class="icon-plus"></span></button>
+              <div class="faq-content" hidden><p>Yes, there is a nominal fee. IEEE RAS members receive a 30% discount.</p></div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-trigger" aria-expanded="false">Can I attend virtually? <span class="icon-plus"></span></button>
+              <div class="faq-content" hidden><p>Absolutely. We offer a "Digital Pass" for virtual access.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="glass-panel contact-wrapper reveal">
+             <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p class="muted">Have questions about sponsorship or bulk tickets? Reach out directly.</p>
+                <div class="contact-links">
+                   <a href="mailto:akrasc2026@ieee.org" class="c-link"><div class="c-icon"><i data-lucide="mail"></i></div><span>akrasc2026@ieee-kerala.org</span></a>
+                   <a href="#" class="c-link"><div class="c-icon"><i data-lucide="map-pin"></i></div><span>Providence College Of Engineering, Chengannur, Kerala</span></a>
+                </div>
+             </div>
+             <form id="contactForm" class="contact-form">
+                <div class="form-group"><input class="input-field" placeholder="Your Name" required /></div>
+                <div class="form-group"><input class="input-field" type="email" placeholder="Email Address" required /></div>
+                <div class="form-group"><textarea class="input-field area" placeholder="How can we help?" required></textarea></div>
+                <button class="btn btn-primary w-full">Send Message</button>
+             </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand"><div class="brand-logo"><i data-lucide="cpu"></i></div><div><h4>AKRASC 2026</h4><p class="muted">All Kerala Robotics & Automation Society Conclave</p></div></div>
+          <div class="footer-links"><a href="#" data-scroll="#about">About</a><a href="#" data-scroll="#speakers">Speakers</a><a href="#" data-scroll="#faq">FAQ</a><a href="#" data-scroll="#contact">Contact</a></div>
+          <div class="footer-social"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a><a href="#"><i data-lucide="instagram"></i></a></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 IEEE RAS Kerala Chapter. All rights reserved.</p></div>
+      </div>
+    </footer>
+
+    <div class="modal-overlay" id="modalBackdrop">
+       <div class="modal-container" id="registerModal">
+          <div class="modal-header"><h3>Secure Your Spot</h3><button class="close-modal" id="closeModal"><i data-lucide="x"></i></button></div>
+          <div class="modal-body">
+             <div id="regSuccess" class="success-state" hidden><div class="success-icon"><i data-lucide="check"></i></div><h4>Registration Confirmed!</h4><p>Check your email.</p></div>
+             <form id="regForm" class="reg-form">
+                <label>Full Name</label><input class="input-field" id="regName" required placeholder="Ex. John Doe" /><div class="error-msg" data-error="name"></div>
+                <label>Email Address</label><input class="input-field" id="regEmail" type="email" required placeholder="name@college.edu" /><div class="error-msg" data-error="email"></div>
+                <label>Phone Number</label><input class="input-field" id="regPhone" required placeholder="10-digit mobile number" /><div class="error-msg" data-error="phone"></div>
+                <label>College</label><input class="input-field" id="regCollege" required placeholder="University Name" /><div class="error-msg" data-error="college"></div>
+                <button class="btn btn-primary w-full mt-4" id="regSubmit">Complete Registration</button>
+             </form>
+          </div>
+       </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>
