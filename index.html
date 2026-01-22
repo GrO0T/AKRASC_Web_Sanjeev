@@ -47,7 +47,7 @@
         </nav>
 
         <div class="nav-actions">
-          <button class="btn btn-primary hidden-mobile" id="openRegisterTop">
+          <button class="btn btn-primary" id="openRegisterTop">
             <span>Get Tickets Now</span>
             <i data-lucide="arrow-right"></i>
           </button>
@@ -66,10 +66,7 @@
           <button class="mobile-link" data-scroll="#gallery">Gallery</button>
           <button class="mobile-link" data-scroll="#speakers">Speakers</button>
           <button class="mobile-link" data-scroll="#contact">Contact</button>
-          
-          <button class="btn btn-primary w-full mt-4" id="openRegisterMobile">
-            Get Tickets
-          </button>
+          <button class="btn btn-primary w-full mt-4" id="openRegisterMobile">Get Tickets</button>
         </div>
       </div>
     </header>
@@ -78,7 +75,6 @@
       <section id="home" class="hero-section">
         <div class="container hero-container">
           <div class="hero-content">
-            
             <div class="hero-date-wrapper reveal">
                <div class="date-badge">
                   <i data-lucide="calendar-clock"></i>
@@ -112,12 +108,9 @@
 
             <div class="countdown-wrapper reveal delay-5">
               <div class="countdown" id="countdown">
-                <div class="cd-box"><div class="cd-val" id="cdDays">00</div><div class="cd-lbl">Days</div></div>
-                <div class="cd-sep">:</div>
-                <div class="cd-box"><div class="cd-val" id="cdHours">00</div><div class="cd-lbl">Hours</div></div>
-                <div class="cd-sep">:</div>
-                <div class="cd-box"><div class="cd-val" id="cdMinutes">00</div><div class="cd-lbl">Minutes</div></div>
-                <div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-val" id="cdDays">00</div><div class="cd-lbl">Days</div></div><div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-val" id="cdHours">00</div><div class="cd-lbl">Hours</div></div><div class="cd-sep">:</div>
+                <div class="cd-box"><div class="cd-val" id="cdMinutes">00</div><div class="cd-lbl">Minutes</div></div><div class="cd-sep">:</div>
                 <div class="cd-box"><div class="cd-val" id="cdSeconds">00</div><div class="cd-lbl">Seconds</div></div>
               </div>
             </div>
@@ -125,11 +118,7 @@
           
           <div class="hero-visual reveal delay-3">
              <div class="logo-display-wrapper">
-                <img 
-                  src="./assets/hero-cover.jpg" 
-                  alt="AKRASC Official Event Cover" 
-                  class="hero-logo-img"
-                >
+                <img src="./assets/hero-cover.jpg" alt="AKRASC Official Event Cover" class="hero-logo-img">
                 <div class="logo-glow"></div>
              </div>
           </div>
@@ -140,46 +129,25 @@
         <div class="container">
             <p class="sponsor-label reveal">Powered by Industry Leaders</p>
             <div class="sponsor-grid reveal delay-1">
-                <div class="sponsor-item">
-                    <div class="sponsor-logo"><i data-lucide="triangle" class="logo-icon"></i><span>NEXUS <span class="light">Dynamics</span></span></div>
-                </div>
-                <div class="sponsor-item">
-                    <div class="sponsor-logo"><i data-lucide="zap" class="logo-icon"></i><span>KERALA <span class="light">Robotics</span></span></div>
-                </div>
-                <div class="sponsor-item">
-                    <div class="sponsor-logo"><i data-lucide="globe-2" class="logo-icon"></i><span>FUTURE <span class="light">Systems</span></span></div>
-                </div>
+                <div class="sponsor-item"><div class="sponsor-logo"><i data-lucide="triangle" class="logo-icon"></i><span>NEXUS <span class="light">Dynamics</span></span></div></div>
+                <div class="sponsor-item"><div class="sponsor-logo"><i data-lucide="zap" class="logo-icon"></i><span>KERALA <span class="light">Robotics</span></span></div></div>
+                <div class="sponsor-item"><div class="sponsor-logo"><i data-lucide="globe-2" class="logo-icon"></i><span>FUTURE <span class="light">Systems</span></span></div></div>
             </div>
         </div>
       </section>
 
       <section id="about" class="section">
         <div class="container">
-          <div class="section-header center reveal">
-            <span class="pill">About The Event</span>
-            <h2 class="section-title">Where Innovation <span class="text-gradient">Meets Reality</span></h2>
-          </div>
+          <div class="section-header center reveal"><span class="pill">About The Event</span><h2 class="section-title">Where Innovation <span class="text-gradient">Meets Reality</span></h2></div>
           <div class="grid-2 about-layout">
             <div class="about-text reveal">
                <p class="lead">The IEEE Robotics and Automation Society Kerala Chapter presents its most ambitious conclave yet.</p>
                <p class="muted">A hybrid experience designed to connect students with industry titans. From Industrial IoT to Humanoid Robotics, AKRASC 2026 covers the spectrum of modern automation.</p>
-               <ul class="feature-list">
-                 <li><i data-lucide="check-circle"></i> <span>Networking with Robotic Engineers</span></li>
-                 <li><i data-lucide="check-circle"></i> <span>Hands-on ROS2 Workshops</span></li>
-                 <li><i data-lucide="check-circle"></i> <span>Startup Pitch Fest</span></li>
-               </ul>
+               <ul class="feature-list"><li><i data-lucide="check-circle"></i> <span>Networking with ISRO Scientists</span></li><li><i data-lucide="check-circle"></i> <span>Hands-on ROS2 Workshops</span></li><li><i data-lucide="check-circle"></i> <span>Startup Pitch Fest</span></li></ul>
             </div>
             <div class="about-visual reveal delay-2">
-               <div class="glass-card metric-card">
-                  <i data-lucide="users" class="metric-icon"></i>
-                  <div class="metric-val">500+</div>
-                  <div class="metric-lbl">Innovators</div>
-               </div>
-               <div class="glass-card metric-card secondary">
-                  <i data-lucide="globe" class="metric-icon"></i>
-                  <div class="metric-val">Global</div>
-                  <div class="metric-lbl">Hybrid Access</div>
-               </div>
+               <div class="glass-card metric-card"><i data-lucide="users" class="metric-icon"></i><div class="metric-val">500+</div><div class="metric-lbl">Innovators</div></div>
+               <div class="glass-card metric-card secondary"><i data-lucide="globe" class="metric-icon"></i><div class="metric-val">Global</div><div class="metric-lbl">Hybrid Access</div></div>
             </div>
           </div>
         </div>
@@ -187,102 +155,36 @@
 
       <section id="details" class="section bg-glass">
         <div class="container">
-           <div class="section-header center reveal">
-                <span class="pill">Event Highlights</span>
-                <h2 class="section-title">Why <span class="text-gradient">Attend?</span></h2>
-           </div>
+           <div class="section-header center reveal"><span class="pill">Event Highlights</span><h2 class="section-title">Why <span class="text-gradient">Attend?</span></h2></div>
            <div class="grid-4">
-              <div class="feature-card reveal">
-                 <div class="icon-box purple"><i data-lucide="trophy"></i></div>
-                 <h3>ProjecX Expo</h3>
-                 <p>Showcase your project and compete for a ₹50k Prize Pool.</p>
-              </div>
-              <div class="feature-card reveal delay-1">
-                 <div class="icon-box blue"><i data-lucide="map-pin"></i></div>
-                 <h3>PRC, Chengannur</h3>
-                 <p>Hosted at Providence College Of Engineering & Online.</p>
-              </div>
-              <div class="feature-card reveal delay-2">
-                 <div class="icon-box pink"><i data-lucide="zap"></i></div>
-                 <h3>Hybrid Mode</h3>
-                 <p>Join us in-person or stream sessions live.</p>
-              </div>
-              <div class="feature-card reveal delay-3">
-                 <div class="icon-box orange"><i data-lucide="award"></i></div>
-                 <h3>Certifications</h3>
-                 <p>Verified IEEE RAS certificates for all attendees.</p>
-              </div>
+              <div class="feature-card reveal"><div class="icon-box purple"><i data-lucide="trophy"></i></div><h3>ProjecX Expo</h3><p>Showcase your project and compete for a ₹50k Prize Pool.</p></div>
+              <div class="feature-card reveal delay-1"><div class="icon-box blue"><i data-lucide="map-pin"></i></div><h3>PRC, Chengannur</h3><p>Hosted at Providence College Of Engineering & Online.</p></div>
+              <div class="feature-card reveal delay-2"><div class="icon-box pink"><i data-lucide="zap"></i></div><h3>Hybrid Mode</h3><p>Join us in-person or stream sessions live.</p></div>
+              <div class="feature-card reveal delay-3"><div class="icon-box orange"><i data-lucide="award"></i></div><h3>Certifications</h3><p>Verified IEEE RAS certificates for all attendees.</p></div>
            </div>
         </div>
       </section>
 
       <section id="gallery" class="section">
         <div class="container">
-            <div class="section-header center reveal">
-                <span class="pill">Gallery</span>
-                <h2 class="section-title">Experience the <span class="text-gradient">Atmosphere</span></h2>
-            </div>
+            <div class="section-header center reveal"><span class="pill">Gallery</span><h2 class="section-title">Experience the <span class="text-gradient">Atmosphere</span></h2></div>
             <div class="gallery-grid">
-                <div class="gallery-item large reveal">
-                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200" alt="Robotics Lab">
-                    <div class="gallery-overlay"><span>Innovation Lab</span></div>
-                </div>
-                <div class="gallery-item tall reveal delay-1">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800" alt="Workshop">
-                    <div class="gallery-overlay"><span>Workshops</span></div>
-                </div>
-                <div class="gallery-item reveal delay-2">
-                    <img src="https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=800" alt="Networking">
-                    <div class="gallery-overlay"><span>Networking</span></div>
-                </div>
-                <div class="gallery-item reveal delay-3">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" alt="Keynotes">
-                    <div class="gallery-overlay"><span>Keynotes</span></div>
-                </div>
+                <div class="gallery-item large reveal"><img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1200" alt="Robotics Lab"><div class="gallery-overlay"><span>Innovation Lab</span></div></div>
+                <div class="gallery-item tall reveal delay-1"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800" alt="Workshop"><div class="gallery-overlay"><span>Workshops</span></div></div>
+                <div class="gallery-item reveal delay-2"><img src="https://images.unsplash.com/photo-1593642532400-2682810df593?q=80&w=800" alt="Networking"><div class="gallery-overlay"><span>Networking</span></div></div>
+                <div class="gallery-item reveal delay-3"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800" alt="Keynotes"><div class="gallery-overlay"><span>Keynotes</span></div></div>
             </div>
         </div>
       </section>
 
       <section id="speakers" class="section">
         <div class="container">
-          <div class="section-header center reveal">
-            <span class="pill">Visionaries</span>
-            <h2 class="section-title">Meet the <span class="text-gradient">Speakers</span></h2>
-          </div>
-
+          <div class="section-header center reveal"><span class="pill">Visionaries</span><h2 class="section-title">Meet the <span class="text-gradient">Speakers</span></h2></div>
           <div class="grid-4 speaker-grid">
-            <div class="speaker-card reveal">
-               <img src="./assets/speakers/speaker1.jpg" class="speaker-img" alt="Speaker 1">
-               <div class="speaker-info">
-                  <h4>Dr. Arthur Sterling</h4>
-                  <span class="role">Principal Engineer</span>
-               </div>
-               <div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div>
-            </div>
-            <div class="speaker-card reveal delay-1">
-               <img src="./assets/speakers/speaker2.jpg" class="speaker-img" alt="Speaker 2">
-               <div class="speaker-info">
-                  <h4>Prof. Sarah Hill</h4>
-                  <span class="role">Director AI</span>
-               </div>
-               <div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div>
-            </div>
-            <div class="speaker-card reveal delay-2">
-               <img src="./assets/speakers/speaker3.jpg" class="speaker-img" alt="Speaker 3">
-               <div class="speaker-info">
-                  <h4>Mr. Mark Lewis</h4>
-                  <span class="role">VP Engineering</span>
-               </div>
-               <div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div>
-            </div>
-            <div class="speaker-card reveal delay-3">
-               <img src="./assets/speakers/speaker4.jpg" class="speaker-img" alt="Speaker 4">
-               <div class="speaker-info">
-                  <h4>Dr. Jane Scott</h4>
-                  <span class="role">Founder</span>
-               </div>
-               <div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div>
-            </div>
+            <div class="speaker-card reveal"><img src="./assets/speakers/speaker1.jpg" class="speaker-img"><div class="speaker-info"><h4>Dr. Arun Kumar</h4><span class="role">Chief Scientist @ ISRO</span></div><div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div></div>
+            <div class="speaker-card reveal delay-1"><img src="./assets/speakers/speaker2.jpg" class="speaker-img"><div class="speaker-info"><h4>Prof. Lakshmi</h4><span class="role">Director AI @ IIT Madras</span></div><div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div></div>
+            <div class="speaker-card reveal delay-2"><img src="./assets/speakers/speaker3.jpg" class="speaker-img"><div class="speaker-info"><h4>Ms. Sneha Rajesh</h4><span class="role">VP Engineering @ Tata Elxsi</span></div><div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div></div>
+            <div class="speaker-card reveal delay-3"><img src="./assets/speakers/speaker4.jpg" class="speaker-img"><div class="speaker-info"><h4>Dr. Vinod Krishnan</h4><span class="role">Founder @ RoboKerala</span></div><div class="speaker-socials"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a></div></div>
           </div>
         </div>
       </section>
@@ -291,18 +193,9 @@
         <div class="container small-container">
           <div class="section-header center reveal"><span class="pill">FAQ</span><h2 class="section-title">Common <span class="text-gradient">Questions</span></h2></div>
           <div class="faq-list reveal">
-            <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">Who can attend AKRASC 2026? <span class="icon-plus"></span></button>
-              <div class="faq-content" hidden><p>AKRASC is open to everyone—students, researchers, faculty, and industry professionals.</p></div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">Is there a registration fee? <span class="icon-plus"></span></button>
-              <div class="faq-content" hidden><p>Yes, there is a nominal fee. IEEE RAS members receive a 30% discount.</p></div>
-            </div>
-            <div class="faq-item">
-              <button class="faq-trigger" aria-expanded="false">Can I attend virtually? <span class="icon-plus"></span></button>
-              <div class="faq-content" hidden><p>Absolutely. We offer a "Digital Pass" for virtual access.</p></div>
-            </div>
+            <div class="faq-item"><button class="faq-trigger" aria-expanded="false">Who can attend AKRASC 2026? <span class="icon-plus"></span></button><div class="faq-content" hidden><p>AKRASC is open to everyone—students, researchers, faculty, and industry professionals.</p></div></div>
+            <div class="faq-item"><button class="faq-trigger" aria-expanded="false">Is there a registration fee? <span class="icon-plus"></span></button><div class="faq-content" hidden><p>Yes, there is a nominal fee. IEEE RAS members receive a 30% discount.</p></div></div>
+            <div class="faq-item"><button class="faq-trigger" aria-expanded="false">Can I attend virtually? <span class="icon-plus"></span></button><div class="faq-content" hidden><p>Absolutely. We offer a "Digital Pass" for virtual access.</p></div></div>
           </div>
         </div>
       </section>
@@ -333,29 +226,13 @@
       <div class="container">
         <div class="footer-content">
           <div class="footer-brand">
-             <div class="brand-logo footer-logo-container">
-                <img src="./assets/logo.png" alt="AKRASC Logo" class="footer-logo-img">
-             </div>
-             <div>
-                <h4>AKRASC 2026</h4>
-                <p class="muted">All Kerala Robotics & Automation Society Conclave</p>
-             </div>
+             <div class="brand-logo footer-logo-container"><img src="./assets/logo.png" class="footer-logo-img"></div>
+             <div><h4>AKRASC 2026</h4><p class="muted">All Kerala Robotics & Automation Society Conclave</p></div>
           </div>
-          <div class="footer-links">
-             <a href="#" data-scroll="#about">About</a>
-             <a href="#" data-scroll="#speakers">Speakers</a>
-             <a href="#" data-scroll="#faq">FAQ</a>
-             <a href="#" data-scroll="#contact">Contact</a>
-          </div>
-          <div class="footer-social">
-             <a href="#"><i data-lucide="linkedin"></i></a>
-             <a href="#"><i data-lucide="twitter"></i></a>
-             <a href="#"><i data-lucide="instagram"></i></a>
-          </div>
+          <div class="footer-links"><a href="#" data-scroll="#about">About</a><a href="#" data-scroll="#speakers">Speakers</a><a href="#" data-scroll="#faq">FAQ</a><a href="#" data-scroll="#contact">Contact</a></div>
+          <div class="footer-social"><a href="#"><i data-lucide="linkedin"></i></a><a href="#"><i data-lucide="twitter"></i></a><a href="#"><i data-lucide="instagram"></i></a></div>
         </div>
-        <div class="footer-bottom">
-           <p>&copy; 2026 IEEE RAS Kerala Chapter. All rights reserved.</p>
-        </div>
+        <div class="footer-bottom"><p>&copy; 2026 IEEE RAS Kerala Chapter. All rights reserved.</p></div>
       </div>
     </footer>
 
