@@ -296,7 +296,7 @@ body {
 /* --- MOBILE SPECIFIC OVERRIDES --- */
 @media (max-width: 768px) {
   .navbar-inner { height: 70px; }
-  .brand-logo { width: 132px; height: 132px; }
+  .brand-logo { width: 152px; height: 152px; }
   .brand-text { font-size: 0rem; }
   
   .hero-section {
