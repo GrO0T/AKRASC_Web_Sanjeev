@@ -55,7 +55,7 @@ window.addEventListener("resize", () => {
 });
 
 // --- 2. Countdown Timer ---
-const targetDate = new Date("2026-01-31T09:00:00").getTime();
+const targetDate = new Date("2026-02-21T09:00:00").getTime();
 
 function updateCountdown() {
     const now = new Date().getTime();
